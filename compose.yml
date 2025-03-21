@@ -3,7 +3,7 @@ services:
     image: dockurr/windows
     container_name: windows
     environment:
-      VERSION: "https://archive.org/download/Windows7SP1ENGAIOx86x64/en_windows_7_AIO_sp1_x64_x86_dvd.ISO"
+      VERSION: "https://archive.org/download/tiny-11-NTDEV/tiny11%20b1.iso"
     devices:
       - /dev/kvm
       - /dev/net/tun
