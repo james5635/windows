@@ -4,6 +4,8 @@ services:
     container_name: windows
     environment:
       VERSION: "https://archive.org/download/Windows7SP1ENGAIOx86x64/en_windows_7_AIO_sp1_x64_x86_dvd.ISO"
+      RAM_SIZE: "8G"
+      CPU_CORES: "4"
     devices:
       - /dev/kvm
       - /dev/net/tun
