@@ -4,6 +4,8 @@ services:
     container_name: windows
     environment:
       VERSION: "https://archive.org/download/tiny-11-NTDEV/tiny11%20b1.iso"
+      RAM_SIZE: "8G"
+      CPU_CORES: "4"
     devices:
       - /dev/kvm
       - /dev/net/tun
@@ -11,6 +13,7 @@ services:
       - NET_ADMIN
     ports:
       - 8006:8006
+      - 5900:5900
       - 3389:3389/tcp
       - 3389:3389/udp
     volumes:
